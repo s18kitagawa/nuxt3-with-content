@@ -16,6 +16,15 @@ export default defineNuxtConfig({
   ],
 
   app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in' // default
+    },
+    layoutTransition: {
+      name: 'layout',
+      mode: 'out-in' // default
+    },
+
     head: {
       htmlAttrs: { lang: 'ja', prefix: 'og: http://ogp.me/ns#' },
       titleTemplate: '%s | ' + baseName, // https://nuxt.com/docs/getting-started/seo-meta#title-template

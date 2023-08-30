@@ -31,7 +31,7 @@ useSeoMeta({
         array.
       </p>
       <figure>
-        <img src="/images/img_test.jpg" alt="Dog" loading="lazy" />
+        <img src="https://source.unsplash.com/3WOh54znPGU" loading="lazy" alt="Dogs">
         <figcaption>Dog</figcaption>
       </figure>
       <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
@@ -174,6 +174,9 @@ useSeoMeta({
       <button class="btn-secondary">
         Secondary Button
       </button>
+    </section>
+    <section>
+      <h2>Vue Components</h2>
     </section>
   </div>
 </template>

@@ -1,4 +1,17 @@
+<script lang="ts">
+useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} | kennel` : 'kennel'
+  },
+  title: 'Contact'
+})
+</script>
+
 <template>
-  <h1>Contact Page</h1>
-  <nuxt-link to="/">Back to home</nuxt-link>
+  <main>
+    <h1>Contact Page</h1>
+    <NuxtLink to="/">
+      back to home
+    </NuxtLink>
+  </main>
 </template>
