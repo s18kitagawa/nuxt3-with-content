@@ -1,7 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@nuxt/content' // https://content.nuxtjs.org/
+    '@nuxt/content', // https://content.nuxtjs.org/
+    '@zadigetvoltaire/nuxt-gtm' // https://github.com/zadigetvoltaire/nuxt-gtm
   ],
   css: ['@/assets/styles/main.sass'],
   vite: {
@@ -22,5 +23,14 @@ export default defineNuxtConfig({
 
   devServer: {
     port: 5555 // custom dev server port number
+  },
+
+  runtimeConfig: {
+    public: {
+      gtm: {
+        id: 'GTM-XXXXXX', // Your GTM container ID
+        defer: true
+      }
+    }
   }
 })
