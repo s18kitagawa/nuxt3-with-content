@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content', // https://content.nuxtjs.org/
-    '@zadigetvoltaire/nuxt-gtm' // https://github.com/zadigetvoltaire/nuxt-gtm
+    '@zadigetvoltaire/nuxt-gtm', // https://github.com/zadigetvoltaire/nuxt-gtm
+    'nuxt-jsonld' // https://github.com/ymmooot/nuxt-jsonld
   ],
   css: ['@/assets/styles/main.sass'],
   vite: {

@@ -25,5 +25,9 @@
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "nuxt-jsonld": "^2.0.8",
+    "schema-dts": "^1.1.2"
   }
 }
