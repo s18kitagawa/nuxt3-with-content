@@ -31,7 +31,7 @@ useSeoMeta({
         array.
       </p>
       <figure>
-        <NuxtImg src="/images/img_test.jpg" alt="Dog" loading="lazy" />
+        <img src="/images/img_test.jpg" alt="Dog" loading="lazy" />
         <figcaption>Dog</figcaption>
       </figure>
       <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
