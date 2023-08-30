@@ -96,6 +96,10 @@ export default defineNuxtConfig({
           href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Open+Sans:wght@400;700&display=swap',
           media: 'print',
           onload: "this.media='all'"
+        },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200'
         }
       ]
     }
@@ -113,6 +117,13 @@ export default defineNuxtConfig({
       }
     }
   },
+
+  components: [
+    {
+      path: '~/components/',
+      pathPrefix: false // default true  | https://nuxt.com/docs/guide/directory-structure/components#component-names
+    }
+  ],
 
   devtools: {
     enabled: true
