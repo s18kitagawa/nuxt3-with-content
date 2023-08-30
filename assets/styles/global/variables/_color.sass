@@ -1,0 +1,111 @@
+@use '../function' as *
+
+$black: #000
+$white: #fff
+
+// tailwindcss Colors v3.3.3
+// https://tailwindcss.com/docs/customizing-colors
+
+$slate-50: #f8fafc
+$slate-200: #e2e8f0
+$slate-400: #94a3b8
+$slate-600: #475569
+$slate-800: #1e293b
+$slate-900: #0f172a
+
+$sky-50: #f0f9ff
+$sky-200: #bae6fd
+$sky-400: #38bdf8
+$sky-600: #0284c7
+$sky-800: #075985
+$sky-900: #0c4a6e
+
+$emerald-50: #ecfdf5
+$emerald-200: #a7f3d0
+$emerald-400: #34d399
+$emerald-600: #059669
+$emerald-800: #065f46
+$emerald-900: #064e3b
+
+$yellow-50: #fefce8
+$yellow-200: #fef08a
+$yellow-400: #facc15
+$yellow-600: #ca8a04
+$yellow-800: #854d0e
+$yellow-900: #713f12
+
+$red-50: #fef2f2
+$red-200: #fecaca
+$red-400: #f87171
+$red-600: #dc2626
+$red-800: #991b1b
+$red-900: #7f1d1d
+
+// Theme Colors - common
+$theme-primary: $sky-400
+$theme-secondary: $sky-600
+$theme-tertiary: $sky-50
+
+// UI Colors - common
+$link: $sky-400
+$link-low: $sky-50
+$success: $emerald-400
+$success-low: $emerald-50
+$warning: $yellow-400
+$warning-low: $yellow-50
+$danger: $red-400
+$danger-low: $red-50
+
+// UI Colors - default & light
+$txt-primary: $slate-800
+$txt-secondary: $slate-400
+$txt-tertiary: $slate-200
+$border-box: $slate-200
+$border-divider: $slate-400
+$bg-low: $slate-50
+$bg-middle: $slate-200
+$bg-strong: $slate-800
+
+// UI Color - dark
+$txt-primary-dark: $slate-200
+$txt-secondary-dark: $slate-400
+$txt-tertiary-dark: $slate-600
+$border-box-dark: $slate-800
+$border-divider-dark: $slate-200
+$bg-low-dark: $slate-800
+$bg-middle-dark: $slate-600
+$bg-strong-dark: $slate-400
+
+// Insert CSS variable
+:root
+  --color-theme-primary: #{hexToRGB($theme-primary)}
+  --color-theme-secondary: #{hexToRGB($theme-secondary)}
+  --color-theme-tertiary: #{hexToRGB($theme-tertiary)}
+
+  --color-link: #{hexToRGB($link)}
+  --color-link-low: #{hexToRGB($link-low)}
+  --color-success: #{hexToRGB($success)}
+  --color-success-low: #{hexToRGB($success-low)}
+  --color-warning: #{hexToRGB($warning)}
+  --color-warning-low: #{hexToRGB($warning-low)}
+  --color-danger: #{hexToRGB($danger)}
+  --color-danger-low: #{hexToRGB($danger-low)}
+
+  --color-txt-primary: #{hexToRGB($txt-primary)}
+  --color-txt-secondary: #{hexToRGB($txt-secondary)}
+  --color-txt-tertiary: #{hexToRGB($txt-tertiary)}
+  --color-border-box: #{hexToRGB($border-box)}
+  --color-border-divider: #{hexToRGB($border-divider)}
+  --color-bg-low: #{hexToRGB($bg-low)}
+  --color-bg-middle: #{hexToRGB($bg-middle)}
+  --color-bg-strong: #{hexToRGB($bg-strong)}
+
+  @media ( prefers-color-scheme: dark )
+    --color-txt-primary: #{hexToRGB($txt-primary-dark)}
+    --color-txt-secondary: #{hexToRGB($txt-secondary-dark)}
+    --color-txt-tertiary: #{hexToRGB($txt-tertiary-dark)}
+    --color-border-box: #{hexToRGB($border-box-dark)}
+    --color-border-divider: #{hexToRGB($border-divider-dark)}
+    --color-bg-low: #{hexToRGB($bg-low-dark)}
+    --color-bg-middle: #{hexToRGB($bg-middle-dark)}
+    --color-bg-strong: #{hexToRGB($bg-strong-dark)}

@@ -1,0 +1,10 @@
+// Color functions
+// https://higemura.com/blog/programming/dark-mode-css-variables-01
+
+// hex -> RGB
+@function hexToRGB($hex)
+  @return red($hex), green($hex), blue($hex)
+
+// Allow CSS variables to be used with RGBA functions
+@function CSStoRGBA($color, $alpha: 1)
+  @return unquote("rgba(var(#{$color}), #{$alpha})")

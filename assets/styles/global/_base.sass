@@ -1,0 +1,46 @@
+@use 'variables' as *
+@use 'function' as *
+
+// Basically, use the CSStoRGBA function to specify colors.
+$container-padding: 20px
+
+html, body
+  font-family: $ff--base
+  font-size: $font-size--base
+  font-style: normal
+  font-feature-settings: "palt"
+  line-height: $line-height--base
+  letter-spacing: $letter-spacing--base
+  color: CSStoRGBA( '--color-txt-primary' )
+  background-color: CSStoRGBA( '--color-bg-low' )
+  transition: 0.35s
+
+// Font
+h1
+  font-size: clamp(1.75rem, 1.625rem + 0.63vw, 2rem)
+  line-height: $line-height--base
+  letter-spacing: $letter-spacing--thin
+
+h2
+  font-size: clamp(1.25rem, 1.125rem + 0.63vw, 1.5rem)
+  line-height: $line-height--base
+  letter-spacing: $letter-spacing--thin
+
+h3, h4, h5, h6
+  font-size: clamp(0.938rem, 0.825rem + 0.57vw, 1.25rem)
+  line-height: $line-height--base
+  letter-spacing: $letter-spacing--thin
+
+small,
+figcaption,
+.caption
+  font-size: 0.75rem
+  line-height: $line-height--thin
+  letter-spacing: $letter-spacing--thin
+
+// Block
+.container
+  width: 100%
+  max-width: calc( 1200px + $container-padding * 2 )
+  padding: 0 $container-padding
+  margin: 0 auto
