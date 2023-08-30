@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="ts" setup>
 useHead({
   titleTemplate: (titleChunk) => {
     return titleChunk ? `${titleChunk} | kennel` : 'kennel'
