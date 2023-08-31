@@ -59,6 +59,10 @@ a
 button
   border: none
 
+// Image
+img
+  border-radius: var(--scale-5)
+
 // Nuxt-page-transitions
 .page-enter-active,
 .page-leave-active
@@ -79,6 +83,9 @@ button
 // Block
 .container
   width: 100%
-  max-width: calc( 1200px + $container-padding * 2 )
+  max-width: calc( var(--scale-content) + $container-padding * 2 )
   padding: 0 $container-padding
   margin: 0 auto
+
+main
+  padding: var(--scale-8) 0

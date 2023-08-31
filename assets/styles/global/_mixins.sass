@@ -1,3 +1,6 @@
 @mixin min-width($width)
   @media screen and (min-width: $width)
     @content
+
+@mixin transition($s:0.3s)
+  transition: $s
