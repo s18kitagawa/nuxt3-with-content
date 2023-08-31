@@ -1,10 +1,12 @@
 ---
-title: Sample 1
+title: Sample 2
 desc: desc
-cover: https://source.unsplash.com/t7wwffh6x8E
+cover: https://source.unsplash.com/v3-zcCWMjgM
 ---
 
-# Sample 1
+# Sample 2
+
+works desc
 
 それは絶対おもにこの答弁方というののところが潜り込むだある。始めて近頃を学習児もずっとその吟味でしょでしょまでが知れてもらったのも干渉きめですですて、まだには信ずるなでありです。差へ申しです訳ももし十月がよくんたで。
 
