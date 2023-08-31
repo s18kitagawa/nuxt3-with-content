@@ -20,8 +20,9 @@ useHead({
           <h1>Masahiro Kitagawa</h1>
           <p>Designer</p>
         </div>
-        <p>
-          this is simple portfolio template. Nuxt 3 + Nuxt Content
+        <p class="profile__desc">
+          イヌ好きデザイナー。（ここはプロフィール説明文スペースです）<br>
+          Dog-loving designer. (This is the space for my profile description.)
         </p>
       </div>
     </section>
@@ -32,20 +33,40 @@ useHead({
       </div>
     </section>
 
-    <section class="works">
+    <section id="works" class="works">
       <div class="container">
         <h2>Works</h2>
-        <ContentList v-slot="{ list }" path="/works">
-          <div v-for="page in list" :key="page._path">
-            <img :src="page.cover" :alt="page.title">
-            <h3>{{ page.title }}</h3>
-            <NuxtLink :to="page._path">
-              details
-            </NuxtLink>
-          </div>
-        </ContentList>
+        <div class="works__card-wrapper">
+          <ContentList
+            v-slot="{ list }"
+            path="/works"
+          >
+            <div
+              v-for="page in list"
+              :key="page._path"
+              class="works__card"
+            >
+              <img
+                :src="page.cover"
+                :alt="page.title"
+                class="works__card__img"
+              >
+              <div class="works__card__txt">
+                <h3>{{ page.title }}</h3>
+                <NuxtLink :to="page._path">
+                  details
+                  <span class="material-symbols-rounded size-20">
+                    arrow_right_alt
+                  </span>
+                </NuxtLink>
+              </div>
+            </div>
+          </ContentList>
+        </div>
       </div>
     </section>
+
+    <PageToTop />
   </main>
 </template>
 
@@ -57,6 +78,7 @@ useHead({
 
   &__cover
     img
+      width: 100%
       border-radius: var(--scale-4)
 
 .profile
@@ -70,7 +92,41 @@ useHead({
     justify-content: center
     align-items: center
     overflow: hidden
+  &__desc
+    margin-top: 24px
 
+.works
+  h2
+    padding-bottom: 16px
+    border-bottom: 1px solid CSStoRGBA( '--color-border-divider', 1)
+  &__card-wrapper
+    padding: 40px 0
+    display: grid
+    grid-template-columns: 1fr
+    gap: 40px 24px
+    @include min-width($md)
+      grid-template-columns: 1fr 1fr
+  &__card
+    display: flex
+    flex-direction: column
+    gap: 24px
+    &__img
+      width: 100%
+      height: 280px
+      object-fit: cover
+    &__txt
+      display: flex
+      flex-direction: column
+      gap: 8px
+      a
+        display: flex
+        align-items: center
+        gap: 8px
+        &:hover
+          text-decoration: none
+
+.size-20
+  font-size: 20px
 .size-64
   font-size: 64px
 </style>

@@ -8,4 +8,5 @@
   </div>
 </template>
 
-<style scoped></style>
+<style lang="sass" scoped>
+</style>

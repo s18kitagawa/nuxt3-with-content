@@ -9,9 +9,14 @@ useHead({
 
 <template>
   <main>
-    <h1>Contact Page</h1>
-    <NuxtLink to="/">
-      back to home
-    </NuxtLink>
+    <section>
+      <div class="container">
+        <h1>Contact Page</h1>
+        <p>this page wip</p>
+        <NuxtLink to="/">
+          back to home
+        </NuxtLink>
+      </div>
+    </section>
   </main>
 </template>
