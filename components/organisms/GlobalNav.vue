@@ -1,11 +1,24 @@
-<script lang="ts">
-export default {
-  data () {
-    return {
-      open: false
-    }
+<script lang="ts" setup>
+const globalNavItems = ref([
+  {
+    path: '/',
+    icon: 'home',
+    txt: 'Home'
+  },
+  {
+    path: '/',
+    icon: 'palette',
+    txt: 'Works'
+  },
+  {
+    path: '/contact',
+    icon: 'chat_bubble',
+    txt: 'Contact'
   }
-}
+])
+const open = ref<boolean>(false)
+
+const globalNavItem = computed(() => globalNavItems.value)
 </script>
 
 <template>
@@ -23,28 +36,17 @@ export default {
       class="global-nav__menu-list"
       :class="{'is-active' : open }"
     >
-      <li>
-        <NuxtLink to="/">
-          <span class="material-symbols-rounded">
-            home
+      <li
+        v-for="menu in globalNavItem"
+        :key="menu.txt"
+        class="global-nav__menu-list__item"
+        @click="open=!open"
+      >
+        <NuxtLink :to="menu.path">
+          <span class="material-symbols-rounded size-20">
+            {{ menu.icon }}
           </span>
-          home
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/">
-          <span class="material-symbols-rounded">
-            palette
-          </span>
-          works
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/contact">
-          <span class="material-symbols-rounded">
-            chat_bubble
-          </span>
-          Contact
+          {{ menu.txt }}
         </NuxtLink>
       </li>
     </ul>
@@ -53,7 +55,11 @@ export default {
 
 <style lang="sass" scoped>
 .global-nav
+  position: fixed
   &__menu
+    position: absolute
+    top: 0
+    left: calc( 50vw - 1200px / 2 - 40px )
     background: $white
     border-radius: 50%
     width: 72px
@@ -71,10 +77,28 @@ export default {
         color: CSStoRGBA( '--color-link', 1)
         background: $sky-200
   &__menu-list
-    display: none
+    position: relative
+    top: calc(72px + 24px)
+    left: calc( 50vw - 1200px / 2 - 40px + 72px / 2 )
+    opacity: 0
+    transform: translateX( -40px )
+    transition: 0.3s
     &.is-active
-      display: block
-
+      opacity: 1
+      transform: translateX( 0px )
+    &__item
+      margin-bottom: 24px
+      & a
+        font-weight: 700
+        text-decoration: none
+        display: flex
+        align-items: center
+        gap: 4px
+        padding: 8px 24px
+        background: $white
+        border-radius: 24px
+.size-20
+  font-size: 20px
 .size-48
   font-size: 48px
 </style>
