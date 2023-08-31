@@ -127,6 +127,12 @@ export default defineNuxtConfig({
     }
   },
 
+  content: {
+    markdown: {
+      anchorLinks: false // https://content.nuxtjs.org/api/configuration#anchorlinks
+    }
+  },
+
   components: [
     {
       path: '~/components/',
