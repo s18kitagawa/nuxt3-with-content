@@ -84,3 +84,9 @@ If you want to see details other than the following list, check [package.json](p
 2023-9 UPDATE
 
 [![Deploys by Netlify](https://www.netlify.com/img/global/badges/netlify-color-accent.svg)](https://www.netlify.com)
+
+### netlify Integrations
+
+2023- UPDATE
+
+- [Lighthouse](https://www.netlify.com/integrations/lighthouse/)
