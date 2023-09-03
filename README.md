@@ -69,7 +69,7 @@ If you want to see details other than the following list, check [package.json](p
   - See [.pretierrc](.pretierrc) for configuration
 - [Stylelint](https://stylelint.io/)
   - [stylelint-config-recommended-scss](https://github.com/stylelint-scss/stylelint-config-recommended-scss)
-  - See [.styelintrc](.styelintrc) for configuration
+  - See [.stylelintrc](.stylelintrc) for configuration
 
 ### SEO
 
