@@ -28,5 +28,7 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint", "vue"],
-  "rules": {}
+  "rules": {
+    "vue/no-v-model-argument": 0
+  }
 }
