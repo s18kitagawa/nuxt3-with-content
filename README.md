@@ -6,14 +6,21 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 Make sure to install the dependencies:
 
+### npm
+
 ```bash
-# npm
 npm install
+```
 
-# pnpm
+### pnpm
+
+```bash
 pnpm install
+```
 
-# yarn
+### yarn
+
+```bash
 yarn install
 ```
 
@@ -23,14 +30,21 @@ Start the development server on `http://localhost:5555`:
 
 \*The server settings have been edited. See [nuxt.config.ts](nuxt.config.ts) for details
 
+### npm
+
 ```bash
-# npm
 npm run dev
+```
 
-# pnpm
+### pnpm
+
+```bash
 pnpm run dev
+```
 
-# yarn
+### yarn
+
+```bash
 yarn dev
 ```
 
@@ -64,3 +78,9 @@ If you want to see details other than the following list, check [package.json](p
 - [@zadigetvoltaire/nuxt-gtm](https://github.com/zadigetvoltaire/nuxt-gtm)
 - [nuxt-json-ld](https://github.com/ymmooot/nuxt-jsonld)
   - [google/schema-dts](https://github.com/google/schema-dts)
+
+## Hosting
+
+2023-9 UPDATE
+
+[![Deploys by Netlify](https://www.netlify.com/img/global/badges/netlify-color-accent.svg)](https://www.netlify.com)
