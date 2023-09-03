@@ -1,16 +1,16 @@
-# これなに
+# what is this?
 
-VS Code用設定ファイルのディレクトリです。
+Directory of configuration files for VS Code.
 
-ファイル保存時にPrettierによってコードが自動整形される設定を入れています。
-この設定を利用するにはPrettierの拡張機能をインストールする必要があります。
+This directory contains settings for automatic code formatting by Prettier when the file is saved.
+To use this setting, you need to install the Prettier extension.
 
 [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 ## editor.formatOnSave
 
-ファイル保存時に整形するかどうか
+Whether to format the file when saving it
 
 ## editor.defaultFormatter
 
-コード整形に使用するフォーマッターは何か
+What formatters are used for code formatting
