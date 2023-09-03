@@ -48,6 +48,18 @@ pnpm run dev
 yarn dev
 ```
 
+## Resources
+
+2023-9 UPDATE
+
+- [Google Fonts](https://fonts.google.com/)
+
+  - Open Sans
+  - Noto Sans JP
+  - Material Symbols
+
+- [Unsplash](https://unsplash.com/)
+
 ## Installed Modules
 
 If you want to see details other than the following list, check [package.json](package.json) or [nuxt.config.ts](.nuxt.config.ts)
