@@ -1,6 +1,6 @@
 # what is this?
 
-Directory of configuration files for VS Code.
+Directory of configuration files for [VS Code](https://code.visualstudio.com/).
 
 This directory contains settings for automatic code formatting by Prettier when the file is saved.
 To use this setting, you need to install the Prettier extension.
