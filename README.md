@@ -1,6 +1,6 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 with Nuxt Content
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) & [Nuxt Content](https://content.nuxtjs.org/) to learn more.
 
 ## Setup
 
@@ -19,7 +19,9 @@ yarn install
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`:
+Start the development server on `http://localhost:5555`:
+
+\*The server settings have been edited. See [nuxt.config.ts](nuxt.config.ts) for details
 
 ```bash
 # npm
@@ -32,32 +34,33 @@ pnpm run dev
 yarn dev
 ```
 
-## Production
+## Installed Modules
 
-Build the application for production:
+If you want to see details other than the following list, check [package.json](package.json) or [nuxt.config.ts](.nuxt.config.ts)
 
-```bash
-# npm
-npm run build
+### CSS Extensions
 
-# pnpm
-pnpm run build
+2023-9 UPDATE
 
-# yarn
-yarn build
-```
+- [Sass](https://sass-lang.com/)
+  - [Sass-loader](https://github.com/webpack-contrib/sass-loader)
 
-Locally preview production build:
+### Modules for code quality
 
-```bash
-# npm
-npm run preview
+2023-9 UPDATE
 
-# pnpm
-pnpm run preview
+- [ESLint](https://eslint.org/)
+  - See [.eslintrc](.eslintrc) for configuration
+- [Prettier](https://prettier.io/)
+  - See [.pretierrc](.pretierrc) for configuration
+- [Stylelint](https://stylelint.io/)
+  - [stylelint-config-recommended-scss](https://github.com/stylelint-scss/stylelint-config-recommended-scss)
+  - See [.styelintrc](.styelintrc) for configuration
 
-# yarn
-yarn preview
-```
+### SEO
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+2023-9 UPDATE
+
+- [@zadigetvoltaire/nuxt-gtm](https://github.com/zadigetvoltaire/nuxt-gtm)
+- [nuxt-json-ld](https://github.com/ymmooot/nuxt-jsonld)
+  - [google/schema-dts](https://github.com/google/schema-dts)

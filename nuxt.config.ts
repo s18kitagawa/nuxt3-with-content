@@ -9,11 +9,7 @@ import {
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    '@nuxt/content', // https://content.nuxtjs.org/
-    '@zadigetvoltaire/nuxt-gtm', // https://github.com/zadigetvoltaire/nuxt-gtm
-    'nuxt-jsonld' // https://github.com/ymmooot/nuxt-jsonld
-  ],
+  modules: ['@nuxt/content', '@zadigetvoltaire/nuxt-gtm', 'nuxt-jsonld'],
 
   app: {
     pageTransition: {
@@ -27,7 +23,8 @@ export default defineNuxtConfig({
 
     head: {
       htmlAttrs: { lang: 'ja', prefix: 'og: http://ogp.me/ns#' },
-      titleTemplate: '%s | ' + baseName, // https://nuxt.com/docs/getting-started/seo-meta#title-template
+      titleTemplate: '%s | ' + baseName,
+      // https://nuxt.com/docs/getting-started/seo-meta#title-template
 
       meta: [
         { charset: 'utf-8' },
@@ -115,28 +112,32 @@ export default defineNuxtConfig({
   },
 
   css: ['@/assets/styles/main.sass'],
+
+  // active global Sass function
   vite: {
     css: {
       preprocessorOptions: {
         sass: {
           additionalData: `
           @use "./assets/styles/app.sass" as *
-          ` // active global Sass function
+          `
         }
       }
     }
   },
 
+  // https://content.nuxtjs.org/api/configuration#anchorlinks
   content: {
     markdown: {
-      anchorLinks: false // https://content.nuxtjs.org/api/configuration#anchorlinks
+      anchorLinks: false
     }
   },
 
+  // https://nuxt.com/docs/guide/directory-structure/components#component-names
   components: [
     {
       path: '~/components/',
-      pathPrefix: false // default true  | https://nuxt.com/docs/guide/directory-structure/components#component-names
+      pathPrefix: false // default true
     }
   ],
 
