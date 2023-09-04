@@ -54,8 +54,8 @@ yarn dev
 
 - [Google Fonts](https://fonts.google.com/)
 
-  - Open Sans
-  - Noto Sans JP
+  - Fira Sans
+  - Zen Kaku Gothic New
   - Material Symbols
 
 - [Unsplash](https://unsplash.com/)

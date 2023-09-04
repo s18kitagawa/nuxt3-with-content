@@ -94,12 +94,12 @@ export default defineNuxtConfig({
         },
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Open+Sans:wght@400;700&display=swap',
+          href: 'https://fonts.googleapis.com/css2?Fira+Sans:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap',
           as: 'style'
         },
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Open+Sans:wght@400;700&display=swap',
+          href: 'https://fonts.googleapis.com/css2?Fira+Sans:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap',
           media: 'print',
           onload: "this.media='all'"
         },
