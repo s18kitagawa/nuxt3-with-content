@@ -40,11 +40,17 @@
         <h2>Works</h2>
         <div class="works__card-wrapper">
           <ContentList v-slot="{ list }" path="/works">
-            <div v-for="page in list" :key="page._path" class="works__card">
+            <div
+              v-for="page in list"
+              :key="page._path"
+              class="works__card fade-in"
+              v-fade-in
+            >
               <img
                 :src="page.cover"
                 :alt="page.title"
                 class="works__card__img"
+                loading="lazy"
               />
               <div class="works__card__txt">
                 <h3>{{ page.title }}</h3>
