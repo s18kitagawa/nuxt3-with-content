@@ -9,6 +9,8 @@ import {
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: true,
+
   modules: ['@nuxt/content', '@zadigetvoltaire/nuxt-gtm', 'nuxt-jsonld'],
 
   app: {
