@@ -11,26 +11,26 @@
     "styelint": "stylelint \"**/*.{css,scss}\""
   },
   "devDependencies": {
-    "@nuxt/content": "^2.8.0",
-    "@nuxt/devtools": "^1.0.0-beta.1",
+    "nuxt": "~3.7.4",
+    "@nuxt/content": "~2.8.5",
+    "@nuxt/devtools": "latest",
+    "sass": "^1.66.1",
+    "sass-loader": "^13.3.2",
+    "typescript": "^5.2.2",
+    "nuxt-jsonld": "^2.0.8",
+    "schema-dts": "^1.1.2",
+    "@zadigetvoltaire/nuxt-gtm": "latest"
+  },
+  "dependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
     "@vue/eslint-config-prettier": "^8.0.0",
-    "@zadigetvoltaire/nuxt-gtm": "^0.0.13",
     "eslint": "^8.48.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-vue": "^9.17.0",
-    "nuxt": "^3.7.0",
     "prettier": "^3.0.3",
-    "sass": "^1.66.1",
-    "sass-loader": "^13.3.2",
     "stylelint": "^15.10.3",
-    "stylelint-config-recommended-scss": "^13.0.0",
-    "typescript": "^5.2.2"
-  },
-  "dependencies": {
-    "nuxt-jsonld": "^2.0.8",
-    "schema-dts": "^1.1.2"
+    "stylelint-config-recommended-scss": "^13.0.0"
   }
 }
