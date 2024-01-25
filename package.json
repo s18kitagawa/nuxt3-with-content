@@ -11,15 +11,15 @@
     "styelint": "stylelint \"**/*.{css,scss}\""
   },
   "devDependencies": {
-    "nuxt": "~3.7.4",
     "@nuxt/content": "~2.8.5",
-    "@nuxt/devtools": "latest",
+    "@nuxt/devtools": "^1.0.8",
+    "@zadigetvoltaire/nuxt-gtm": "latest",
+    "nuxt": "~3.7.4",
+    "nuxt-jsonld": "^2.0.8",
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2",
-    "typescript": "^5.2.2",
-    "nuxt-jsonld": "^2.0.8",
     "schema-dts": "^1.1.2",
-    "@zadigetvoltaire/nuxt-gtm": "latest"
+    "typescript": "^5.2.2"
   },
   "dependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
