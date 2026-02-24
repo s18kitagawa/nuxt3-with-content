@@ -1,3 +1,6 @@
+> [!WARNING]
+> This repository has been archived due to security alerts triggered by its prolonged lack of updates.
+
 # Nuxt 3 with Nuxt Content
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) & [Nuxt Content](https://content.nuxtjs.org/) to learn more.
